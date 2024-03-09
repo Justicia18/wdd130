@@ -419,4 +419,23 @@ nav {
     footer {
         margin-top: 25px;
     }
+
+#rivers {
+    display: block;
+    height: auto;
+}
+
+#salmon_river-img,
+#gray_canyon-img,
+#grand_canyon-img {
+    width: 75%;
+    margin: 8%;
+}
+
+#salmon_river-msg,
+#gray_canyon-msg,
+#grand_canyon-msg {
+    width: 75%;
+    margin: 8%;
+}
 }
