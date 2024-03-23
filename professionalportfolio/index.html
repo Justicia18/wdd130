@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
+    <title>Tyler Justesen | Home</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -14,20 +14,23 @@
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/Logo.png" alt="Tyler Justesn logo">
             </a>
-            <nav>
-                <a href="index.html">Home</a>
+            <div id="navbar">
+
+                <a href="index.html" id="active">Home</a>
                 <a href="commercial.html">Commercial</a>
                 <a href="residental.html">Residential</a>
-            </nav>
+
+            </div>
         </header>
-        <main class="home-grid">
+
+        <main class="index-grid">
+            <img src="images/Tyler Justesen.jpg" class="headshot" alt="Tyler Justesen">
             <section class="intro">
-                <img src="images/Tyler Justesen.jpg" class="headshot" alt="Tyler Justesen">
                 <h2>Tyler Justesen</h2>
                 <p>Tyler Justesen, an esteemed professional in the construction industry, has embarked on a remarkable
                     journey from his formative years in construction to becoming a seasoned expert in Virtual Design and
                     Construction (VDC).
-
+                    <br></br>
                     Hailing originally from the lively coastal city of Virginia Beach, Virginia, Tyler's upbringing was
                     steeped in the culture of construction, instilling in him a strong work ethic and a knack for
                     hands-on problem-solving. His pursuit of a career in construction led him to Brigham Young
@@ -41,18 +44,20 @@
                     revolutionize construction processes.</p>
             </section>
             <img src="images/My wife and I.JPG" class="brooke" alt="Tyler Justesen">
-            <img src="images/My family.jpg" class="family" alt="Tyler Justesen">
+            <img src="images/My family.jpg" class="familypic" alt="Tyler Justesen">
             <section class="family">
                 <h2>Family</h2>
                 <p>Beyond his professional accomplishments, Tyler is a devoted husband, celebrating 5.5 years of
                     marriage, and a proud father to a lively 2-year-old son. The warmth of family life extends to their
                     cherished 3-year-old dog. While Tyler's roots may lie in Virginia Beach, he has found a welcoming
                     home in the tranquil surroundings of Rexburg, Idaho.
+                    <br></br>
 
                     In addition to his professional and family life, Tyler is a well-rounded individual with a diverse
                     set of interests. Whether exploring the rugged landscapes of Idaho with his family, staying abreast
                     of industry trends through continuous learning, or seeking solace in the great outdoors, Tyler
                     brings a wealth of experiences to every aspect of his life.
+                    <br></br>
 
                     Tyler Justesen's narrative is one of dedication, growth, and a steadfast commitment to excellence.
                     From his upbringing amidst construction sites to his pivotal role in VDC, he continues to leave an
@@ -61,19 +66,36 @@
             </section>
         </main>
         <footer>
-            <p>Tyler Justesen &copy; 2024</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
-            <p><a href="/contactus.html">Contact Us</a></p>
+            <p><a href="site-plan.html">Site Plan</a> <a href="/contactus.html">Contact Us</a></p>
             <div class="social">
                 <a href="https://www.facebook.com/tyler.justesen" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
+                    <img src="images/facebook.png" class="fbicon" alt="fb icon">
                 </a>
                 <a href="https://www.linkedin.com/in/tyler-justesen-a210052b5/" target="_blank">
                     <img src="images/LinkedIn_icon.svg.png" alt="linkedin icon">
                 </a>
             </div>
+            <p class="copywrite">Tyler Justesen &copy; 2024</p>
+
         </footer>
     </div>
+    <!-- nav java -->
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 
 </html>
