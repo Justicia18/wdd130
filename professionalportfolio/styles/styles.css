@@ -133,7 +133,7 @@ footer p a:hover {
 footer {
     display: block;
     margin-top: 20px;
-text-align: center;
+    text-align: center;
 }
 
 
@@ -152,13 +152,30 @@ footer p a {
     text-decoration: none;
 
 }
-.fbicon{
+
+.fbicon {
     border-radius: 5px;
 }
+
 footer img {
     width: 50px;
     margin: 0 30px;
 }
+
 @media screen and (max-width: 900px) {
-    
+    .index-grid {
+        display: block
+    }
+
+    p {
+        margin: 10px
+    }
+    .brooke,.headshot,.familypic{
+        margin: 0;
+        padding:0;
+    }
+    .family,.school,.intro{
+        margin: 0;
+        padding:50px;
+    }
 }
