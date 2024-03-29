@@ -14,11 +14,13 @@
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/Logo.png" alt="Tyler Justesn logo">
             </a>
-            <nav>
+            <div id="navbar">
+
                 <a href="index.html">Home</a>
                 <a href="commercial.html">Commercial</a>
-                <a href="residental.html">Residential</a>
-            </nav>
+                <a href="residental.html" id="active">Residential</a>
+
+            </div>
         </header>
         <main class="home-grid">
             <section class="intro-res">
@@ -57,6 +59,23 @@
             </div>
         </footer>
     </div>
+  <!-- nav java -->
+  <script>
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 </body>
 
 </html>

@@ -14,33 +14,70 @@
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/Logo.png" alt="Tyler Justesn logo">
             </a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="commercial.html">Commercial</a>
-                <a href="residental.html">Residential</a>
-            </nav>
-        </header>
-        <main class="home-grid">
-            <section class="intro-comm">
-                <h2>Commercial</h2>
-                <p>Welcome to my portfolio of commercial architecture projects, where innovation, functionality, and the power of design converge to shape the landscapes of commerce and industry. Within these pages, I invite you to explore a diverse collection of projects that exemplify the dynamic intersection of architecture, business, and community.
+            <div id="navbar">
 
-                    As an architect specializing in commercial spaces, I am committed to creating environments that not only inspire and engage but also enhance the daily experiences of those who inhabit them. From bustling urban centers to serene corporate campuses, each project in this portfolio represents a unique opportunity to redefine the way we work, shop, dine, and interact with the world around us.</p>
+                <a href="index.html">Home</a>
+                <a href="commercial.html" id="active">Commercial</a>
+                <a href="residental.html">Residential</a>
+
+            </div>
+        </header>
+        <main class="comm-grid">
+            <section class="comm-intro">
+                <h2>Commercial Projects</h2>
+                <p>
+                    These commercial projects were designed throughout my time at BYU-I and show case my growth and learning.
+                </p>
+            </section>
+            <div class="flip-card-1">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/IMG_1903.jpg" alt="Avatar" style="width:600px;height:600px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Archer Rd School House Redesign</h1>
+                        <p>School House to Restaurant</p>
+                        <p>For this project I redesigned an old school house on Archer road near Rexburg, ID. The
+                            redesign involved updating the exterior finishes to not only fix it up but to also give it a
+                            more modern feel. The added railing and porch accomadates an outdoor eating area to enjoy
+                            summer weather. All while keeping this building a symbol of the areas long history.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card-2">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Comerical.png" alt="Avatar" style="width:600px;height:600px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Mixed-Use Building</h1>
+                        <p>56 W 2nd N, Rexburg, ID</p>
+                        <p>This mixed-use buiding was designed to accomadate three stores on the first floor, a lobby,
+                            managment office, and mail area. The apartments in the upper floors offer studio and
+                            1-bedroom apartments. The building was designed to encourage business growth in the area and
+                            accomadate the growing population in the growing college town.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <section class="intro-comm">
+               
             </section>
             <section class="career-comm">
                 <h2>Career</h2>
                 <p>Throughout my career, I have had the privilege of collaborating with a wide range of clients, from visionary entrepreneurs to established corporations, each with their own distinct vision and objectives. By understanding their needs, aspirations, and brand identities, I strive to design spaces that not only meet their functional requirements but also embody their values and ethos.
 
                     In this portfolio, you will encounter a diverse array of commercial projects, ranging from sleek office buildings and retail spaces to vibrant mixed-use developments and innovative community centers. Whether it's creating flexible work environments that foster collaboration and creativity, designing retail spaces that captivate and inspire, or crafting hospitality venues that offer memorable experiences, my designs are guided by a commitment to excellence, sustainability, and the human experience.</p>
-            </section>
-            <img src="images/IMG_1903[735].jpg" class="commpic-1" alt="Tyler Justesen">
-            <img src="images/Comerical.png" class="commpic-2" alt="Tyler Justesen">
-            <section class="end-comm">
+            </section> -->
+
+            <!-- <section class="end-comm">
                 <h2>Enjoy</h2>
                 <p>Beyond aesthetics, my approach to commercial architecture is grounded in a deep understanding of the economic, social, and environmental factors that shape the built environment. From leveraging cutting-edge technologies to implementing sustainable design principles, I am dedicated to creating spaces that not only stand the test of time but also contribute to the well-being of their occupants and the broader community.
 
                     As you explore these pages, I invite you to immerse yourself in the world of commercial architecture and envision the possibilities that lie ahead. Whether you are a business owner seeking to transform your space, a developer embarking on a new project, or simply a lover of architecture and design, I hope that this portfolio serves as a source of inspiration and a testament to the transformative power of architecture in shaping the way we live, work, and connect with the world around us. Welcome to my portfolio of commercial architecture projects, where innovation meets impact and the future takes shape.</p>
-            </section>
+            </section> -->
         </main>
         <footer>
             <p>Tyler Justesen &copy; 2024</p>
@@ -56,6 +93,23 @@
             </div>
         </footer>
     </div>
+    <!-- nav java -->
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 
 </html>
