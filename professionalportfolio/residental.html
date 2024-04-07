@@ -22,60 +22,78 @@
 
             </div>
         </header>
-        <main class="home-grid">
-            <section class="intro-res">
-                <h2>Residential</h2>
-                <p>Welcome to my portfolio of residential architecture projects, where every structure tells a unique story of innovation, inspiration, and the art of living. Within these pages, I invite you to embark on a journey through a collection of homes that epitomize the essence of thoughtful design, meticulous craftsmanship, and the pursuit of creating spaces that resonate with the human spirit.
+        <main class="res-grid">
+            <div class="res-intro">
+                <h2>Residential Projects</h2>
+            </div>
+                <div class="video">
+                    <div class="bnb"> <p>
+                        A vacation home that I designed using a combonation of REVIT and Sketch-up. I created the video using Lumion and Da-vinvi. The house is designed to fit in on the island of Ft. Meyers Beach, FL.
+    
+                    </p></div>
+                    <iframe width="866" height="487" src="https://www.youtube.com/embed/YmeNnbXl8Ow" title="Vacation Home" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            <div class="flip-card-3">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Drawings.jpeg" class="respic-1" alt="Tyler Justesen"
+                            style="width:600px;height:600px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Childhood Home Updates</h1>
+                        <p>5140 Providence Rd</p>
+                        <p>For this project I designed a simple update to the my childhood home. Extending the garage forward and changing the style of the exterior finishes on one of the walls would help to match this home to the properties around it while also making it stand out and give it a more contemporary feel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card-4">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/Renderings-Fallingwater_2.jpg" class="respic-2" alt="Tyler Justesen"
+                            style="width:600px;height:600px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Lumion Practice</h1>
+                        <p>Fallingwater</p>
+                        <p>This project showcases some of my early work with Lumion and creating rendered environments. Fallingwater has always been a favorite of mine and it was fun to recreate it in Lumion.</p>
+                    </div>
+                </div>
+            </div>
 
-                    In this portfolio, you will discover an array of residential projects that span a spectrum of styles, contexts, and aspirations. From charming bungalows nestled in quaint neighborhoods to contemporary masterpieces gracing urban landscapes, each project reflects my unwavering commitment to excellence, creativity, and the seamless integration of form and function.</p>
-            </section>
-            <section class="sec-2-comm">
-                <h2>My phylosiphy</h2>
-                <p>As an architect and designer, I believe that the homes I create are more than just physical structures; they are reflections of the individuals and families who inhabit them. My approach to residential architecture is rooted in a deep understanding of my clients' needs, aspirations, and lifestyles, allowing me to tailor each design to their unique preferences and personalities.
 
-                    Throughout this portfolio, you will encounter a diverse array of architectural styles, from modernist interpretations to traditional homages, all unified by a common thread of timeless elegance and meticulous attention to detail. Whether it's optimizing space for maximum efficiency, harnessing natural light to create inviting interiors, or seamlessly integrating indoor and outdoor living areas, my designs are driven by a relentless pursuit of beauty, functionality, and sustainability.</p>
-            </section>
-           
-            <img src="images/Drawings.jpg" class="respic-1" alt="Tyler Justesen">
-            <img src="images/Renderings Fallingwater_2 - Photo.jpg" class="respic-2" alt="Tyler Justesen">
-            <section class="commitment">
-                <h2>Commitment</h2>
-                <p>Beyond aesthetics, my commitment to excellence extends to every aspect of the architectural process, from initial conceptualization to final construction. I collaborate closely with my clients, builders, and craftsmen to ensure that each project is executed with precision, integrity, and a steadfast dedication to exceeding expectations.
 
-                    As you peruse these pages, I hope that you will be inspired by the creativity, innovation, and passion that define my residential architecture projects. Whether you are embarking on your own journey of homeownership, seeking inspiration for your dream home, or simply appreciating the artistry of architectural design, I invite you to immerse yourself in the beauty and possibility of residential architecture. Welcome to my portfolio, where dreams take shape and spaces come to life.</p>
-            </section>
         </main>
         <footer>
-            <p>Tyler Justesen &copy; 2024</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
-            <p><a href="/contactus.html">Contact Us</a></p>
+            <p><a href="site-plan.html">Site Plan</a> <a href="contactme.html">Contact Me</a></p>
             <div class="social">
                 <a href="https://www.facebook.com/tyler.justesen" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
+                    <img src="images/facebook.png" class="fbicon" alt="fb icon">
                 </a>
                 <a href="https://www.linkedin.com/in/tyler-justesen-a210052b5/" target="_blank">
                     <img src="images/LinkedIn_icon.svg.png" alt="linkedin icon">
                 </a>
             </div>
+            <p class="copywrite">Tyler Justesen &copy; 2024</p>
+
         </footer>
     </div>
-  <!-- nav java -->
-  <script>
-    window.onscroll = function () {
-        myFunction()
-    };
+    <!-- nav java -->
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
 
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
         }
-    }
-</script>
+    </script>
 </body>
 
 </html>
